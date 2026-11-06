@@ -1,0 +1,12 @@
+{
+  "schema": "praxis.instance/1",
+  "instanceId": "pxi-b748c4d744e94673973724d12c6fc29b",
+  "createdAt": "2026-11-06T13:45:36.840Z",
+  "createdWith": "3.12.0",
+  "repository": {
+    "provider": "github",
+    "repositoryId": null,
+    "repository": "kemiller2002/gate-proof-r10"
+  },
+  "predecessors": []
+}
