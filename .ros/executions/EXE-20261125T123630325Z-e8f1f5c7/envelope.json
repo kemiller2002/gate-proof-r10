@@ -50,8 +50,8 @@
   "humanOnlyTransitions": [],
   "parentExecution": null,
   "startedAt": "2026-11-25T12:36:30.494Z",
-  "state": "blocked",
-  "stateReason": "conditor upgrade --check refused (exit 131): 'Conditor lock is missing: .conditor/lock.json. Run conditor init first.' The repository was never Conditor-initialized; adopting a lock (conditor init) needs an owner decision. Also, Aegis 2.0.0 has a known FSharp.Core 11.0.101 floor defect; the target will be Aegis 2.0.1.",
+  "state": "abandoned",
+  "stateReason": "Superseded by WI-0002: the owner authorized conditor init (2026-11-25), and WI-0002 adopts the Conditor lock and moves to echelon-current 1.42.0, which selects Aegis 2.0.2",
   "origin": {
     "kind": "work-transition",
     "reference": "work.begin"

@@ -4,7 +4,7 @@
   "repository": "gate-proof-r10",
   "actor": "ros-bootstrap",
   "startedAt": "2026-11-06T13:45:36.836Z",
-  "updatedAt": "2026-11-25T12:36:47.000Z",
+  "updatedAt": "2026-11-25T18:02:37.000Z",
   "baselineDirtyPaths": [],
   "workItems": [
     {
@@ -24,14 +24,27 @@
     {
       "id": "WI-0001",
       "type": "task",
-      "state": "blocked",
-      "semanticState": "blocked",
+      "state": "abandoned",
+      "semanticState": "abandoned",
       "evidence": [],
-      "updatedAt": "2026-11-25T12:36:47.000Z",
+      "updatedAt": "2026-11-25T18:02:37.000Z",
       "telemetryExecutionIds": [
         "EXE-20261125T123630325Z-e8f1f5c7"
       ],
-      "blockReason": "conditor upgrade --check refused (exit 131): 'Conditor lock is missing: .conditor/lock.json. Run conditor init first.' The repository was never Conditor-initialized; adopting a lock (conditor init) needs an owner decision. Also, Aegis 2.0.0 has a known FSharp.Core 11.0.101 floor defect; the target will be Aegis 2.0.1."
+      "blockReason": "conditor upgrade --check refused (exit 131): 'Conditor lock is missing: .conditor/lock.json. Run conditor init first.' The repository was never Conditor-initialized; adopting a lock (conditor init) needs an owner decision. Also, Aegis 2.0.0 has a known FSharp.Core 11.0.101 floor defect; the target will be Aegis 2.0.1.",
+      "abandonedAt": "2026-11-25T18:02:37.000Z",
+      "abandonedReason": "Superseded by WI-0002: the owner authorized conditor init (2026-11-25), and WI-0002 adopts the Conditor lock and moves to echelon-current 1.42.0, which selects Aegis 2.0.2"
+    },
+    {
+      "id": "WI-0002",
+      "type": "task",
+      "state": "active",
+      "semanticState": "active",
+      "evidence": [],
+      "updatedAt": "2026-11-25T18:02:37.000Z",
+      "telemetryExecutionIds": [
+        "EXE-20261125T180242630Z-af4d5307"
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
   "repository": "gate-proof-r10",
-  "nextSeq": 2,
+  "nextSeq": 3,
   "items": [
     {
       "id": "WI-0001",
@@ -9,10 +9,32 @@
       "description": null,
       "tags": [],
       "priority": "medium",
-      "status": "ready",
+      "status": "abandoned",
       "attachments": [],
       "createdAt": "2026-11-25T12:36:24.795Z",
-      "updatedAt": "2026-11-25T12:36:29.000Z",
+      "updatedAt": "2026-11-25T18:02:37.000Z",
+      "createdBy": "unknown",
+      "createdByActor": {
+        "kind": "agent",
+        "id": "anthropic/claude-code",
+        "provider": "anthropic",
+        "model": "unknown",
+        "runtime": "claude-code"
+      },
+      "source": "manual",
+      "sourceReference": null,
+      "abandonedReason": "Superseded by WI-0002: the owner authorized conditor init (2026-11-25), and WI-0002 adopts the Conditor lock and moves to echelon-current 1.42.0, which selects Aegis 2.0.2"
+    },
+    {
+      "id": "WI-0002",
+      "title": "Adopt Conditor governance (conditor init) and upgrade to echelon-current 1.42.0",
+      "description": null,
+      "tags": [],
+      "priority": "medium",
+      "status": "ready",
+      "attachments": [],
+      "createdAt": "2026-11-25T18:02:07.211Z",
+      "updatedAt": "2026-11-25T18:02:37.000Z",
       "createdBy": "unknown",
       "createdByActor": {
         "kind": "agent",
