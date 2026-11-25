@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "tool": "ros",
   "package": "@echelon-foundry/repository-operating-system",
-  "installedVersion": "3.12.0",
+  "installedVersion": "3.25.0",
   "configurationVersion": 1,
   "profile": "greenfield",
   "managedArtifacts": [
     {
       "path": ".echelon/toolchain.json",
       "ownership": "shared",
-      "sha256": "dbbf013fde5b5dadd826531ca27ee021a3364ae4f17e2ee1bc576492a8175d38"
+      "sha256": "7b36dec6d1c4b3c38bdb3f4b30a36364d286f61657099b3449028c1c626afe14"
     },
     {
       "path": ".editorconfig",
@@ -149,12 +149,12 @@
     {
       "path": "docs/development-telemetry.md",
       "ownership": "tool-owned",
-      "sha256": "3de75435b5bb79861a4317d3a3248140e9ab4df37cbb2f168bfff3c2307a631e"
+      "sha256": "619e56266fc9f5834d530531ff7e3c4e7b5487404e97bd1a1fbeb1916040c59c"
     },
     {
       "path": "docs/fallback-reconciliation.md",
       "ownership": "tool-owned",
-      "sha256": "9ec489d1f1762230f92051e8ed22ea598d65d79b19687b0cc97be1dfe52c8061"
+      "sha256": "cd8b12aeca89d95397a42e6bd68f75ada96aaf6575deeb2279eb61a6ca00d2a9"
     },
     {
       "path": "docs/ordo-observation.md",
@@ -169,7 +169,7 @@
     {
       "path": "docs/remote-protocol.md",
       "ownership": "tool-owned",
-      "sha256": "ba991f3f812bcf09d986be5b0ca5146cd8066399f81f63f27445e8d72b47e6e0"
+      "sha256": "504a0ce2ed13eee21307b686f78eb47ac11f2cd984774553e3ea8c1235b7b08d"
     },
     {
       "path": "docs/work-adapter-contract.md",
@@ -179,7 +179,7 @@
     {
       "path": "docs/work-protocol.md",
       "ownership": "tool-owned",
-      "sha256": "1fde8df6cdd7b21081d30badfa14b6d0a9ed8dbcac25e0391c00951343918474"
+      "sha256": "ac171a29724c7f1cd6606df031d68602a5d26c206a6f384aa5658b69859eb0d1"
     },
     {
       "path": "framework/REP-SPECIFICATION.md",
@@ -384,7 +384,7 @@
     {
       "path": "schemas/execution-telemetry.schema.json",
       "ownership": "tool-owned",
-      "sha256": "22b08ad49695139177f4eea44aa4ea1aa589fa9b5294b31979ec9caf4aabdbec"
+      "sha256": "cf16dc704b78f87918f7c49513fce9fef64da8e81ea751203a2a56145cf4ba06"
     },
     {
       "path": "schemas/experiment.schema.json",

@@ -1,6 +1,6 @@
 # Gate Proof R10
 
-This repository is a greenfield pilot running Praxis 3.12.0, Echelon Foundry's
+This repository is a greenfield pilot running Praxis 3.25.0, Echelon Foundry's
 repository operating system. An older installation may also have `./ros`, a
 compatibility alias of `./praxis`.
 
