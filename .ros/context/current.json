@@ -4,7 +4,7 @@
   "repository": "gate-proof-r10",
   "actor": "ros-bootstrap",
   "startedAt": "2026-11-06T13:45:36.836Z",
-  "updatedAt": "2026-11-06T13:45:36.836Z",
+  "updatedAt": "2026-11-25T12:36:47.000Z",
   "baselineDirtyPaths": [],
   "workItems": [
     {
@@ -20,6 +20,18 @@
       ],
       "updatedAt": "2026-11-06T13:45:36.836Z",
       "completedAt": "2026-11-06T13:45:36.836Z"
+    },
+    {
+      "id": "WI-0001",
+      "type": "task",
+      "state": "blocked",
+      "semanticState": "blocked",
+      "evidence": [],
+      "updatedAt": "2026-11-25T12:36:47.000Z",
+      "telemetryExecutionIds": [
+        "EXE-20261125T123630325Z-e8f1f5c7"
+      ],
+      "blockReason": "conditor upgrade --check refused (exit 131): 'Conditor lock is missing: .conditor/lock.json. Run conditor init first.' The repository was never Conditor-initialized; adopting a lock (conditor init) needs an owner decision. Also, Aegis 2.0.0 has a known FSharp.Core 11.0.101 floor defect; the target will be Aegis 2.0.1."
     }
   ]
 }

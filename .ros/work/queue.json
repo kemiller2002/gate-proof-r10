@@ -1,6 +1,28 @@
 {
   "schemaVersion": "1.0.0",
   "repository": "gate-proof-r10",
-  "nextSeq": 1,
-  "items": []
+  "nextSeq": 2,
+  "items": [
+    {
+      "id": "WI-0001",
+      "title": "Upgrade Aegis 1.0.0 -> 2.0.0 with Conditor 0.10.27 (echelon-current 1.40.0)",
+      "description": null,
+      "tags": [],
+      "priority": "medium",
+      "status": "ready",
+      "attachments": [],
+      "createdAt": "2026-11-25T12:36:24.795Z",
+      "updatedAt": "2026-11-25T12:36:29.000Z",
+      "createdBy": "unknown",
+      "createdByActor": {
+        "kind": "agent",
+        "id": "anthropic/claude-code",
+        "provider": "anthropic",
+        "model": "unknown",
+        "runtime": "claude-code"
+      },
+      "source": "manual",
+      "sourceReference": null
+    }
+  ]
 }
