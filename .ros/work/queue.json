@@ -31,10 +31,10 @@
       "description": null,
       "tags": [],
       "priority": "medium",
-      "status": "ready",
+      "status": "complete",
       "attachments": [],
       "createdAt": "2026-11-25T18:02:07.211Z",
-      "updatedAt": "2026-11-25T18:02:37.000Z",
+      "updatedAt": "2026-11-25T18:07:24.000Z",
       "createdBy": "unknown",
       "createdByActor": {
         "kind": "agent",
