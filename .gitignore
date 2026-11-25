@@ -33,3 +33,14 @@ logs/*
 !.env.example
 *.pem
 *.key
+
+# conditor:build-outputs:start
+# Build, test, package and browser outputs (Conditor fsharp-limen-web scaffold)
+bin/
+obj/
+dist/
+TestResults/
+node_modules/
+test-results/
+playwright-report/
+# conditor:build-outputs:end

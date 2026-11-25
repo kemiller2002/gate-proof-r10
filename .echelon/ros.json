@@ -9,7 +9,7 @@
     {
       "path": ".echelon/toolchain.json",
       "ownership": "shared",
-      "sha256": "be97267fd3964dc6ad71223208d4747a39706ddafe0f75933f6a98df6a9f77fc"
+      "sha256": "dbbf013fde5b5dadd826531ca27ee021a3364ae4f17e2ee1bc576492a8175d38"
     },
     {
       "path": ".editorconfig",
@@ -34,12 +34,12 @@
     {
       "path": ".gitignore",
       "ownership": "user-owned",
-      "sha256": "c54943daf26c21b7bce4a13ac0af2403f2382c95ae34bdc5538ecb031e37aeb4"
+      "sha256": "762a0d582ad473fa05d0ee19946de05e39ba04bd8a69f472eb235adcd747b4d3"
     },
     {
       "path": "AGENTS.md",
       "ownership": "shared",
-      "sha256": "4406d44aec0b47b31aec9c396338baca184bf54917f1667add92e4d54dd0a57f"
+      "sha256": "70de616b00dfc0f6a550695f09d03f08e94766290f8bf0e863758c105cc074fc"
     },
     {
       "path": "BOOTSTRAP.md",
@@ -79,7 +79,7 @@
     {
       "path": "context/CURRENT-STATE.md",
       "ownership": "shared",
-      "sha256": "0bb3cbc5636bce79d530d13a83574aaa350db6e5b716041ed8ab466e30f1330d"
+      "sha256": "314e7f5f23590ef170c2a71df7efeb45849f9d07964ba3cfc48fbae4d81bf82f"
     },
     {
       "path": "context/DECISIONS.md",
@@ -359,7 +359,7 @@
     {
       "path": "ros.json",
       "ownership": "shared",
-      "sha256": "3a0ea3088e2766777871b52b588a10bfe80334a89ab869bc9d98e7c311e907bd"
+      "sha256": "a4d87858fde9a6802173a7d75d08f40a1f3d91368a03a6ccd62d38c065940e61"
     },
     {
       "path": "ros.ps1",
