@@ -1,0 +1,44 @@
+{
+  "schema": "praxis.verification-matrix/1",
+  "workItem": "WI-0002",
+  "rows": [
+    {
+      "dimension": "happy-path",
+      "status": "met",
+      "evidence": [
+        { "kind": "command", "reference": "conditor verify --target . (Conditor 0.10.29)", "result": "Conditor completed successfully" },
+        { "kind": "integration-test", "reference": "npx playwright test (tests/browser/smoke.spec.js)", "result": "3/3 passed: both pages load every resource, including Forma 1.0.1 and the Echelon theme CSS and fonts, with no script error" },
+        { "kind": "unit-test", "reference": "dotnet test App.slnx -c Release", "result": "5/5 passed against EchelonFoundry.Aegis.Core 2.0.2" }
+      ]
+    },
+    {
+      "dimension": "negative",
+      "status": "met",
+      "evidence": [
+        { "kind": "command", "reference": "conditor upgrade --current --check before package-lock.json existed", "result": "Refused the Forma binding (no lockfile) and changed nothing" },
+        { "kind": "command", "reference": "NamespaceMigrator --check over src and tests after migration", "result": "Forma namespace: nothing left to rewrite; Folio's ef-print-document is intentionally kept (Folio 0.4.1 defines it)" }
+      ]
+    },
+    {
+      "dimension": "corruption",
+      "status": "not-applicable",
+      "reason": "The change moves toolchain and package pins; it reads and writes no persisted application state.",
+      "evidence": []
+    },
+    {
+      "dimension": "compatibility",
+      "status": "met",
+      "evidence": [
+        { "kind": "command", "reference": "conditor drift --registry echelon-registry --channel echelon-current --target . --fail-on fail", "result": "Every component [ok] at echelon-current 1.42.0; exit 0" },
+        { "kind": "command", "reference": "praxis foundations verify --json", "result": "passed, no findings" },
+        { "kind": "location", "reference": ".conditor/lock.json", "result": "Lock records the 1.42.0 selection; Conditor's second plan reported no version drift" }
+      ]
+    },
+    {
+      "dimension": "recovery",
+      "status": "not-applicable",
+      "reason": "No runtime state or migration: rollback is reverting the commits, since conditor.json, the lock, the authority, package.json and package-lock.json are all versioned in Git.",
+      "evidence": []
+    }
+  ]
+}
