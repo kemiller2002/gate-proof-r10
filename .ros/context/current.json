@@ -44,7 +44,27 @@
       "updatedAt": "2026-11-25T18:02:37.000Z",
       "telemetryExecutionIds": [
         "EXE-20261125T180242630Z-af4d5307"
-      ]
+      ],
+      "latestCheckpoint": {
+        "id": "84520a0c51a0c2949e719233",
+        "recordedAt": "2026-11-25T18:06:38.000Z",
+        "executionId": "EXE-20261125T180242630Z-af4d5307",
+        "repository": "gate-proof-r10",
+        "branch": "claude/vigila-implementation-jdeps1",
+        "commit": "34ec9e0a6c68df61c98fd9a0790aab373ff84274",
+        "remote": {
+          "name": "origin",
+          "url": "https://github.com/kemiller2002/gate-proof-r10"
+        },
+        "remoteBranch": "claude/vigila-implementation-jdeps1",
+        "remoteCommit": "34ec9e0a6c68df61c98fd9a0790aab373ff84274",
+        "summary": "conditor init and echelon-current 1.42.0 upgrade committed and pushed; dotnet 5/5, Playwright 3/3",
+        "nextAction": "Complete WI-0002 and open the draft PR against proof",
+        "verification": {
+          "status": "verified",
+          "mechanism": "git-remote-observation"
+        }
+      }
     }
   ]
 }
