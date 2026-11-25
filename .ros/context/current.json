@@ -4,7 +4,7 @@
   "repository": "gate-proof-r10",
   "actor": "ros-bootstrap",
   "startedAt": "2026-11-06T13:45:36.836Z",
-  "updatedAt": "2026-11-06T13:45:36.836Z",
+  "updatedAt": "2026-11-25T18:07:24.000Z",
   "baselineDirtyPaths": [],
   "workItems": [
     {
@@ -20,6 +20,162 @@
       ],
       "updatedAt": "2026-11-06T13:45:36.836Z",
       "completedAt": "2026-11-06T13:45:36.836Z"
+    },
+    {
+      "id": "WI-0001",
+      "type": "task",
+      "state": "abandoned",
+      "semanticState": "abandoned",
+      "evidence": [],
+      "updatedAt": "2026-11-25T18:02:37.000Z",
+      "telemetryExecutionIds": [
+        "EXE-20261125T123630325Z-e8f1f5c7"
+      ],
+      "blockReason": "conditor upgrade --check refused (exit 131): 'Conditor lock is missing: .conditor/lock.json. Run conditor init first.' The repository was never Conditor-initialized; adopting a lock (conditor init) needs an owner decision. Also, Aegis 2.0.0 has a known FSharp.Core 11.0.101 floor defect; the target will be Aegis 2.0.1.",
+      "abandonedAt": "2026-11-25T18:02:37.000Z",
+      "abandonedReason": "Superseded by WI-0002: the owner authorized conditor init (2026-11-25), and WI-0002 adopts the Conditor lock and moves to echelon-current 1.42.0, which selects Aegis 2.0.2"
+    },
+    {
+      "id": "WI-0002",
+      "type": "task",
+      "state": "complete",
+      "semanticState": "complete",
+      "evidence": [
+        {
+          "type": "implementation",
+          "path": "conditor.json"
+        },
+        {
+          "type": "implementation",
+          "path": ".conditor/lock.json"
+        },
+        {
+          "type": "tests",
+          "path": "HANDOFF.md"
+        },
+        {
+          "type": "verification-matrix",
+          "path": "evidence/WI-0002-verification-matrix.json"
+        }
+      ],
+      "updatedAt": "2026-11-25T18:07:24.000Z",
+      "telemetryExecutionIds": [
+        "EXE-20261125T180242630Z-af4d5307"
+      ],
+      "latestCheckpoint": {
+        "id": "76b4ad08624094c7ffc04852",
+        "recordedAt": "2026-11-25T18:07:22.000Z",
+        "executionId": "EXE-20261125T180242630Z-af4d5307",
+        "repository": "gate-proof-r10",
+        "branch": "claude/vigila-implementation-jdeps1",
+        "commit": "6e374d70bc82ea8ad40cc3d112d6ec0a11c79298",
+        "remote": {
+          "name": "origin",
+          "url": "https://github.com/kemiller2002/gate-proof-r10"
+        },
+        "remoteBranch": "claude/vigila-implementation-jdeps1",
+        "remoteCommit": "6e374d70bc82ea8ad40cc3d112d6ec0a11c79298",
+        "summary": "Upgrade and verification matrix committed and pushed",
+        "nextAction": "Complete WI-0002",
+        "verification": {
+          "status": "verified",
+          "mechanism": "git-remote-observation"
+        }
+      },
+      "completedAt": "2026-11-25T18:07:24.000Z",
+      "completionReadiness": {
+        "schema": "praxis.completion-readiness/1",
+        "workItem": "WI-0002",
+        "decision": "ready",
+        "policy": {
+          "dokimos": "off",
+          "ordoBoundary": "off",
+          "requiredFacets": [
+            "verification-matrix-satisfied"
+          ]
+        },
+        "facets": {
+          "implementationComplete": {
+            "required": false,
+            "status": "satisfied",
+            "evidence": [
+              "implementation=conditor.json",
+              "implementation=.conditor/lock.json"
+            ],
+            "blocking": false
+          },
+          "behaviorVerified": {
+            "required": false,
+            "status": "satisfied",
+            "evidence": [
+              "tests=HANDOFF.md"
+            ],
+            "blocking": false
+          },
+          "architectureVerified": {
+            "required": false,
+            "status": "not-required",
+            "blocking": false
+          },
+          "releaseReady": {
+            "required": false,
+            "status": "not-required",
+            "blocking": false
+          },
+          "designDebtDeclared": {
+            "required": false,
+            "status": "not-required",
+            "blocking": false
+          },
+          "verificationMatrixSatisfied": {
+            "required": true,
+            "status": "satisfied",
+            "evidence": [
+              "verification matrix met: happy-path, negative, compatibility"
+            ],
+            "blocking": false
+          },
+          "groupVerified": {
+            "required": false,
+            "status": "not-required",
+            "blocking": false
+          }
+        },
+        "sources": {
+          "dokimos": {
+            "evidenceType": "dokimos-ratchet",
+            "requirement": "off",
+            "judgement": "ignored"
+          },
+          "ordoBoundary": {
+            "evidenceType": "ordo-boundary",
+            "requirement": "off",
+            "judgement": "ignored"
+          },
+          "verificationMatrix": {
+            "evidenceType": "verification-matrix",
+            "requirement": "required",
+            "path": "evidence/WI-0002-verification-matrix.json",
+            "observation": "parsed",
+            "judgement": "passed",
+            "evidence": [
+              "verification matrix met: happy-path, negative, compatibility"
+            ]
+          }
+        },
+        "obligations": {
+          "designDebtDeclaration": false,
+          "verificationDimensions": []
+        },
+        "consumedEvidence": [
+          {
+            "type": "verification-matrix",
+            "path": "evidence/WI-0002-verification-matrix.json",
+            "sha256": "sha256:99294141569c1330ddccd6459a77e080d202069b66b0d6e63ddd6a389f88e3ee"
+          }
+        ],
+        "blockingReasons": []
+      }
     }
   ]
 }

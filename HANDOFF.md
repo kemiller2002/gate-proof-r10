@@ -6,7 +6,19 @@ Bootstrap Gate Proof R10 as a greenfield Praxis pilot.
 
 ## Current state
 
-- Praxis 3.12.0 greenfield profile installed on 2026-11-06.
+- Praxis 3.12.0 greenfield profile installed on 2026-11-06; Praxis 3.25.0 since
+  WI-0002 (2026-11-25).
+- Conditor-governed since WI-0002 (2026-11-25): the owner authorized
+  `conditor init` (Conditor 0.10.29), which added the Conditor lock, the
+  `fsharp-limen-web` scaffold, the Indy-init requirements and the ready mission
+  COND-MISSION-001. `conditor upgrade --current` then moved the repository to
+  echelon-current 1.42.0: Praxis 3.25.0, Ordo 1.20.0, Aegis 2.0.2, Forma 1.0.1
+  (scaffold page migrated with Forma's NamespaceMigrator; Folio's `ef-print-*`
+  elements are Folio's own names and stay), Limen 0.9.1, Folio 0.4.1, Percepta
+  0.1.0, and the optional Echelon theme 1.1.0 (loaded after Forma `all.css`:
+  `echelon.css`, `echelon-fonts.css`, `echelon-app.css`).
+- Upstream sync is configured against `origin/main`, whose history is unrelated
+  to the default branch `proof`, so `praxis sync check` reports `unavailable`.
 - Project charter is a draft.
 - No first vertical slice, evidence record, hypothesis, or experiment has been
   accepted.

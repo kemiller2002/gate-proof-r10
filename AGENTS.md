@@ -302,3 +302,48 @@ The command syntax is worth knowing rather than guessing from memory:
 This section's command-syntax notes apply equally to `./praxis` in this
 source checkout and to any project's own bootstrapped `./praxis`, since both
 run the same F# CLI.
+
+<!-- echelon:percepta:start -->
+## Percepta semantic UI contracts
+
+Managed by `percepta-repo`. Do not edit inside this block.
+
+For consequential UI creation or modification:
+
+1. read the applicable Percepta screen contract before implementation;
+2. preserve its purpose, primary user question, semantic regions, hierarchy, state projections, capability projections, forbidden patterns, and verification obligations;
+3. treat application/Ordo state as authoritative for legality; Percepta verifies that the UI exposes that meaning and does not invent domain truth;
+4. validate/compile the applicable contract and run rendered verification when a runnable target is available;
+5. do not claim UI work complete while required Percepta evidence is Failed or Unavailable.
+
+Semantic commands belong to the separate `percepta` executable. Repository installation commands belong to `percepta-repo`; do not treat lifecycle health as semantic UI evidence.
+
+Stable verification hooks include:
+
+- `data-percepta-region`
+- `data-percepta-observation`
+- `data-percepta-capability`
+- `data-percepta-unavailable-reason-for`
+- `data-percepta-blocker-link-for`
+<!-- echelon:percepta:end -->
+
+<!-- conditor:agent-entry:start -->
+# Agent Entry
+
+This repository was initialized by Conditor.
+
+## Canonical execution contract
+
+Read and obey `kickoff/indy-init.kickoff.json` before implementation.
+
+## Mission
+
+Build the Indy Init Root-Cause Investigation Platform from the pinned kickoff contract. Follow ROS/Ordo/Aegis/Praxis/Limen/Forma/Folio/Percepta boundaries, prove completion with tests and repository evidence, and do not silently resolve experimental or deferred research questions.
+
+## Rules
+
+- Treat the contract and its referenced normative documents as authoritative.
+- Do not invent architecture decisions that the contract classifies as locked, experimental, or deferred.
+- Use installed lifecycle/component tooling rather than copying framework implementations.
+- Completion requires deterministic verification and repository evidence, not an agent completion statement.
+<!-- conditor:agent-entry:end -->
